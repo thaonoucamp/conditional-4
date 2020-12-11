@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <p>
+      Cách nào khai báo một biến và gán giá trị số nguyên là đúng trong các câu lệnh sau ?
+    </p>
+    <input type="radio" id="a" value="a" onclick="checkResult(this)" />A. var 1 *= 10;
+    <input type="radio" id="b" value="b" onclick="checkResult(this)"/>B. var X = 10;
+    <input type="radio" id="c" value="c" onclick="checkResult(this)"/>C. var X = 10.of;
+    <input type="radio" id="d" value="d" onclick="checkResult(this)"/>D. X = "10";
+</form>
+<script>
+    let a = document.getElementById("a").value;
+    let b = document.getElementById("b").value;
+    let c = document.getElementById("c").value;
+    let d = document.getElementById("d").value;
+
+    function checkResult(element) {
+        if(element.id == b ) {
+            alert("Dap an ban chon la dung");
+        }else {
+            alert("Dap an ban chon la sai");
+        }
+    }
+</script>
+</body>
+</html>
